@@ -60,7 +60,7 @@
 
 body{
    background: linear-gradient(90deg, #040918 0%, #091540 100%);
-    padding: 25px 35px;
+    padding: 25px 65px;
     font-family: "poppins", sans-serif;
     
 } 
@@ -143,5 +143,107 @@ button{
 }
 
 .cards {
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 12px;
+    min-height: 180px;
+    padding: 18px;
     background-color: hsl(226, 11%, 37%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+}
+
+.cards > img {
+    flex: 0 0 auto;
+    width: 48px;
+    height: 48px;
+}
+
+.extension-info {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.extension-info h2 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.extension-info p {
+    color: hsl(217, 61%, 90%);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.extension-actions {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remove-button {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 5px 9px;
+    background-color: transparent;
+    color: white;
+    font-size: 11px;
+}
+
+.remove-button:hover {
+    background-color: var(--red-500);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 22px;
+}
+
+.switch input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    background-color: var(--neutral-600);
+    border-radius: 999px;
+    transition: background-color 0.2s ease;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.switch input:checked + .slider {
+    background-color: var(--red-500);
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(16px);
+}
+
+.switch input:focus-visible + .slider {
+    outline: 2px solid var(--red-400);
+    outline-offset: 3px;
 }
