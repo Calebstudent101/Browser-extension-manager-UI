@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -8,15 +10,39 @@
 body{
    background: linear-gradient(90deg, #040918 0%, #091540 100%);
     padding: 25px 35px;
+    font-family: "poppins", sans-serif;
+    
 } 
 
-.extensions{
-    height: 50px;
+#extensionsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
     border-radius: 10px;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.674);
+    padding: 20px 10px;
     
 }
-.logo1{
-    width: 35%;
-    padding: 20px 50px;
+#logo1{
+    width: 100px;
+
 }
+
+.margin-top{
+    margin-top: 5px;
+}
+
+#sun{
+    margin-top: 4px;
+}
+
+#extensionsColor{
+    color: white;
+
+}
+#extensionsList{
+    margin-top: 35px;
+    padding: 1px 2px;
+}
+
