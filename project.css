@@ -135,4 +135,13 @@ button{
 #sunContainer:hover{
     background-color: hsla(225, 23%, 24%, 0.244);
 }
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
 
+.cards {
+    background-color: hsl(226, 11%, 37%);
+}
