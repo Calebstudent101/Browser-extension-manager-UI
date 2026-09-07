@@ -4,6 +4,7 @@
   --neutral-900: hsl(227, 75%, 14%);
   --neutral-800: hsl(226, 25%, 17%);
   --neutral-700: hsl(225, 23%, 24%);
+  --myneutral: hsla(225, 23%, 24%, 0.612);
   --neutral-600: hsl(226, 11%, 37%);
   --neutral-300: hsl(0, 0%, 78%);
   --neutral-200: hsl(217, 61%, 90%);
@@ -85,6 +86,7 @@ body{
 
 #sun{
     margin-top: 4px;
+    width: 16px;
 }
 
 #extensionsColor{
@@ -94,26 +96,43 @@ body{
 #extensionsList{
     margin-top: 35px;
     padding: 1px 2px;
-}
-
-#extensionsList{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
+button{
+    border:none;
+}
 .nav-buttons{
     border-radius: 15px;
     padding: 5px 13px;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.153);
     background-color: hsl(226, 11%, 37%);
     color: hsl(217, 61%, 90%);
-
+    font-size: 12px;
+}
+.nav-buttons:hover{
+    background-color: hsla(226, 11%, 37%, 0.432);
+}
+.nav-buttons:active{
+    background-color: var(--red-500);
 }
 
 #nav-buttons-container{
     padding: 0px 5px;
+    display: flex;
+    gap: 6px;
+
 }
-.sunContainer{
-    background-color: 
+#sunContainer{
+    background-color: var(--myneutral);
+    border-radius: 6px;
+    padding: 3px 5px;
 }
+
+#sunContainer:hover{
+    background-color: hsla(225, 23%, 24%, 0.244);
+}
+
