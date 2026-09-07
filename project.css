@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+   background: linear-gradient(90deg, #040918 0%, #091540 100%);
+    padding: 25px 35px;
+} 
+
+.extensions{
+    height: 50px;
+    border-radius: 10px;
+    background-color: grey;
+    
+}
+.logo1{
+    width: 35%;
+    padding: 20px 50px;
+}
