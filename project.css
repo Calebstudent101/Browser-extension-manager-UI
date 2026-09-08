@@ -115,6 +115,7 @@ button{
 }
 .nav-buttons:hover{
     background-color: hsla(226, 11%, 37%, 0.432);
+    transition: all 0.2s ease-in-out;
 }
 .nav-buttons:active{
     background-color: var(--red-500);
@@ -156,7 +157,12 @@ button{
     background-color: hsl(226, 11%, 37%);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 12px;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.cards:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 .cards > img {
