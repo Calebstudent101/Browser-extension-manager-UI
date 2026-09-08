@@ -269,7 +269,19 @@ button{
         grid-template-rows: auto;
         gap: 12px;
     }
-    
+    #extensionsList{
+        display: block;
+    }
+    #extensionsColor{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #nav-buttons-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
 
 /* @media (min-width: 768px) {
