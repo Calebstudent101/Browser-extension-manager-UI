@@ -134,12 +134,13 @@ button{
 
 #sunContainer:hover{
     background-color: hsla(225, 23%, 24%, 0.244);
+    transition: all 0.2s ease-in-out;
 }
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
+    gap: 12px;
 }
 
 .cards {
@@ -155,6 +156,7 @@ button{
     background-color: hsl(226, 11%, 37%);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 12px;
+    transition: all 0.2s ease-in-out;
 }
 
 .cards > img {
@@ -190,7 +192,7 @@ button{
 
 .remove-button {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 6px;
+    border-radius: 999px;
     padding: 5px 9px;
     background-color: transparent;
     color: white;
@@ -204,8 +206,8 @@ button{
 .switch {
     position: relative;
     display: inline-block;
-    width: 38px;
-    height: 22px;
+    width: 30px;
+    height: 18px;
 }
 
 .switch input {
@@ -221,18 +223,21 @@ button{
     background-color: var(--neutral-600);
     border-radius: 999px;
     transition: background-color 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
 }
 
 .slider::before {
     position: absolute;
     content: "";
-    width: 16px;
-    height: 16px;
-    left: 3px;
-    bottom: 3px;
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 2px;
     background-color: white;
     border-radius: 50%;
     transition: transform 0.2s ease;
+    
 }
 
 .switch input:checked + .slider {
@@ -240,7 +245,7 @@ button{
 }
 
 .switch input:checked + .slider::before {
-    transform: translateX(16px);
+    transform: translateX(12px);
 }
 
 .switch input:focus-visible + .slider {
