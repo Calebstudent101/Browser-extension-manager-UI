@@ -112,12 +112,17 @@ button{
     background-color: hsl(226, 11%, 37%);
     color: hsl(217, 61%, 90%);
     font-size: 12px;
+    cursor: pointer;
 }
 .nav-buttons:hover{
     background-color: hsla(226, 11%, 37%, 0.432);
     transition: all 0.2s ease-in-out;
 }
 .nav-buttons:active{
+    background-color: var(--red-500);
+}
+
+.nav-buttons.active {
     background-color: var(--red-500);
 }
 
@@ -158,6 +163,10 @@ button{
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 12px;
     transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.cards[hidden] {
+    display: none;
 }
 
 .cards:hover {

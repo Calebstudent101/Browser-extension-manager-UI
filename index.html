@@ -6,7 +6,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="project.css">
-    <script scr="project.js"></script>
+    <script src="project.js" defer></script>
     <title>Frontend Mentor | Browser extensions manager UI</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,9 +28,9 @@
     <div id="extensionsList">
       <h3 id="extensionsColor">Extensions List</h3>
       <div id="nav-buttons-container">
-        <button class="nav-buttons">All</button>
-        <button class="nav-buttons">Active</button>
-        <button class="nav-buttons">Inactive</button>
+        <button class="nav-buttons active" data-filter="all" aria-pressed="true">All</button>
+        <button class="nav-buttons" data-filter="active" aria-pressed="false">Active</button>
+        <button class="nav-buttons" data-filter="inactive" aria-pressed="false">Inactive</button>
       </div>
     </div>
 
