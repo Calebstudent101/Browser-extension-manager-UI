@@ -258,3 +258,23 @@ button{
     outline: 2px solid var(--red-400);
     outline-offset: 3px;
 }
+
+@media (max-width: 767px) {
+    body {
+        padding: 16px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 12px;
+    }
+    
+}
+
+/* @media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+} */
