@@ -59,9 +59,10 @@
 
 
 body{
-   background: linear-gradient(90deg, #040918 0%, #091540 100%);
+    background: var(--dark-gradient);
     padding: 25px 65px;
     font-family: "poppins", sans-serif;
+     transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
     
 } 
 
@@ -142,6 +143,53 @@ button{
     background-color: hsla(225, 23%, 24%, 0.244);
     transition: all 0.2s ease-in-out;
 }
+
+body.light-theme {
+    --myneutral: var(--neutral-0);
+    --neutral-600: hsl(226, 11%, 37%);
+    background: var(--light-gradient);
+}
+
+body.light-theme #extensionsContainer,
+body.light-theme .cards,
+body.light-theme .nav-buttons {
+    background-color: var(--neutral-0);
+    border-color: rgba(15, 23, 42, 0.15);
+}
+
+body.light-theme #extensionsColor,
+body.light-theme .extension-info h2 {
+    color: var(--neutral-900);
+}
+
+body.light-theme .extension-info p,
+body.light-theme .nav-buttons {
+    color: var(--neutral-600);
+}
+
+body.light-theme #sunContainer {
+    background-color: var(--neutral-100);
+}
+
+body.light-theme #sunContainer:hover,
+body.light-theme .nav-buttons:hover {
+    background-color: var(--neutral-200);
+}
+
+body.light-theme .nav-buttons.active {
+    background-color: var(--red-500);
+    color: white;
+}
+
+body.light-theme .remove-button {
+    border-color: rgba(15, 23, 42, 0.25);
+    color: var(--neutral-900);
+}
+
+body.light-theme .slider {
+    background-color: var(--neutral-300);
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
